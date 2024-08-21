@@ -1,0 +1,95 @@
+.dropdown:hover >.dropdown-menu, .dropend:hover >.dropdown-menu{
+    display: block;
+}
+.dropend:hover >.dropdown-menu{
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+#navbarNavDropdown{
+   margin-right: 50px;
+}
+.navbar-brand{
+    margin-right: auto;
+}
+.navbar-nav {
+    margin-left: auto;
+}
+.dropdown-menu.navbar-nav{
+    margin-right: 0;
+}
+.heading-animation {
+    animation: moveHeading 1s ease-in-out forwards;
+}
+@keyframes moveHeading {
+    0% {
+         transform: translateY(0);
+         opacity: 1; 
+        }
+    50% {
+         transform: translateY(-10px); 
+         opacity: 0;
+        }
+    100%{
+        transform: translateY(0); 
+        opacity: 1;
+    }
+  }
+  .para-animation{
+    animation: para 1s ease-in-out forwards;
+    animation-delay: 0.2s;
+  }
+  @keyframes para {
+    0% {
+         transform: translateY(0);
+         opacity: 1; 
+        }
+    50% {
+         transform: translateY(-10px); 
+         opacity: 0;
+        }
+    100%{
+        transform: translateY(-10px); 
+        opacity: 1;
+    }
+  }
+  .portfolio:hover{
+    cursor: pointer;
+    animation: movepic 2s  alternate forwards;
+  }
+  @keyframes movepic {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-20px);
+    }
+  }
+
+  button i:hover{
+    cursor: pointer;
+    position: relative;
+    animation: moveupdown 1s infinite alternate ;
+}
+
+@keyframes moveupdown {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+    
+}
+.home-menu{
+  position: absolute;
+  top: 12rem;
+  gap:2px;
+  width: 900px;
+  left: 30%;
+  transform: translate(-50%, -50%);
+
+}
